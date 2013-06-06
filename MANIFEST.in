@@ -1,0 +1,6 @@
+include *.in *.py *.txt
+
+recursive-include autonomofluxograma *.py *.glade *.png *.aflux *.ico gtkrc
+recursive-include bin *
+recursive-include doc *
+
