@@ -9,9 +9,9 @@ long_description = (
     'Contributors\n'
     '============\n'
     + '\n' +
-    open('CONTRIBUTORS.txt').read()
+    open('CONTRIBUTORS.rst').read()
     + '\n' +
-    open('CHANGES.txt').read()
+    open('CHANGES.rst').read()
     + '\n')
 
 setup(name='instance.manager',
@@ -24,9 +24,9 @@ setup(name='instance.manager',
         "Programming Language :: Python",
         ],
       keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
+      author='Rodrigo Ferreira de Souza',
+      author_email='rodfersou at gmail dot com',
+      url='https://github.com/collective/instance.manager',
       license='gpl',
       packages=find_packages('src'),
       package_dir = {'': 'src'},
@@ -36,7 +36,9 @@ setup(name='instance.manager',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
+          'PySide==1.1.2',
       ],
+      scripts=['bin/instancemanager'],
       entry_points="""
       # -*- Entry points: -*-
       """,
